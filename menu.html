@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- <link rel="stylesheet" href="css/navFooter.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="40x40" href="images/icon-logo.svg">
+    <title>Menu | Bean and Beyond.</title>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <a href="index.html"><img src="images/logo.svg" alt="Bean and Beyond. logo" class="header-logo"></a>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html" class="nav-page">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+                <a type="button" class="header-cta" target="_blank" href="https://www.foodpanda.ph/restaurant/peya/bean-and-beyond">Order Now</a>
+            </nav>
+
+            <nav class="mobile"><div class="ham-menu mobile"><span ></span><span></span><span></span></div></nav>
+        </header>
+            
+            <div class="menu-overlay mobile">
+                <ul>
+                    <li><a href="index.html" class="nav-page">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>   
+                <a type="button" class="header-cta mobile" target="_blank" href="https://www.foodpanda.ph/restaurant/peya/bean-and-beyond">Order Now</a>
+            </div>
+
+            <main>
+                <div class="desktop-menu">
+                <aside>
+                    <div class="desktop">
+                        <ul>
+                            <li><a href="#bsm" onclick="menuChosen('baristaSpecial','bsm')" id="baristaSpeciald" class="nc"><img src="images/barista-special.png" alt="baristaSpecial" class="img-bs"></a></li>
+                            <li><a href="#ic" onclick="menuChosen('icedCoffee','ic')" id="icedCoffeed" class="nc">ICED COFFEE</a></li>
+                            <li><a href="#hc" onclick="menuChosen('hotCoffee', 'hc')" id="hotCoffeed" class="nc">HOT COFFEE</a></li>
+                            <li><a href="#nc" onclick="menuChosen('nonCoffee', 'nc')" id="nonCoffeed" class="nc">NON-COFFEE</a></li>
+                            <li><a href="#fr" onclick="menuChosen('frappe', 'fr')" id="frapped" class="nc">FRAPPE</a></li>
+                            <li><a href="#fa" onclick="menuChosen('fruitAdes', 'fa')" id="fruitAdesd" class="nc">FRUIT ADES</a></li>
+                            <li><a href="#cr" onclick="menuChosen('croffles', 'cr')" id="crofflesd" class="nc">CROFFLES</a></li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- NAVIGATION FOR MENU -->
+                <div class="nav-in mobile">
+                    <div>
+                        <ul>
+                            <li><a href="#bsm" onclick="menuChosen('baristaSpecial','bsm')" id="baristaSpecial" class="nc active">BARISTA SPECIAL</a></li>
+                            <li><a href="#ic" onclick="menuChosen('icedCoffee','ic')" id="icedCoffee" class="nc">ICED COFFEE</a></li>
+                            <li><a href="#hc" onclick="menuChosen('hotCoffee', 'hc')" id="hotCoffee" class="nc">HOT COFFEE</a></li>
+                            <li><a href="#nc" onclick="menuChosen('nonCoffee', 'nc')" id="nonCoffee" class="nc">NON-COFFEE</a></li>
+                            <li><a href="#fr" onclick="menuChosen('frappe', 'fr')" id="frappe" class="nc">FRAPPE</a></li>
+                            <li><a href="#fa" onclick="menuChosen('fruitAdes', 'fa')" id="fruitAdes" class="nc">FRUIT ADES</a></li>
+                            <li><a href="#cr" onclick="menuChosen('croffles', 'cr')" id="croffles" class="nc">CROFFLES</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BARISTA SPECIAL -->
+                <div id="bsm" class="menu-coffee active">
+                    <div class="inside-menu">
+                        <h1>BARISTA SPECIAL</h1>
+                        
+                        <div class="menu-item-container" id="menu-item-container">
+                            <!-- <div class="menu-item">
+                                <a href="">
+                                    <p>Mocha</p>
+                                    <h2>&#8369;169</h2>
+                                    <img src="images/coffee/SeaSaltCloud.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="">
+                                    <p>Mocha</p>
+                                    <h2>&#8369;169</h2>
+                                    <img src="images/coffee/SeaSaltCloud.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="">
+                                    <p>Mocha</p>
+                                    <h2>&#8369;169</h2>
+                                    <img src="images/coffee/SeaSaltCloud.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="">
+                                    <p>Mocha</p>
+                                    <h2>&#8369;169</h2>
+                                    <img src="images/coffee/SeaSaltCloud.svg" alt="">
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ICED COFFEE -->
+                <div id="ic" class="menu-coffee">
+                    <div class="inside-menu">
+                        <h1>ICED COFFEE</h1>
+                        
+                        <div class="menu-item-container" id="menu-item-container">
+                            <!-- <div class="menu-item">
+                                <a href="">
+                                    <p>Mocha</p>
+                                    <h2>&#8369;169</h2>
+                                    <img src="images/coffee/SeaSaltCloud.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="">
+                                    <p>Mocha</p>
+                                    <h2>&#8369;169</h2>
+                                    <img src="images/coffee/SeaSaltCloud.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="">
+                                    <p>Mocha</p>
+                                    <h2>&#8369;169</h2>
+                                    <img src="images/coffee/SeaSaltCloud.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="">
+                                    <p>Mocha</p>
+                                    <h2>&#8369;169</h2>
+                                    <img src="images/coffee/SeaSaltCloud.svg" alt="">
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOT COFFEE -->
+                <div id="hc" class="menu-coffee">
+                    <div class="inside-menu">
+                        <h1>HOT COFFEE</h1>
+                        
+                        <div class="menu-item-container" id="menu-item-container">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NON-COFFEE -->
+                <div id="nc" class="menu-coffee">
+                    <div class="inside-menu">
+                        <h1>NON-COFFEE</h1>
+                        
+                        <div class="menu-item-container" id="menu-item-container">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FRAPPE -->
+                <div id="fr" class="menu-coffee">
+                    <div class="inside-menu">
+                        <h1>FRAPPE</h1>
+                        
+                        <div class="menu-item-container" id="menu-item-container">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FRUIT ADES -->
+                <div id="fa" class="menu-coffee">
+                    <div class="inside-menu">
+                        <h1>FRUIT ADES</h1>
+
+                        <div class="menu-item-container" id="menu-item-container">
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <!-- CROFFLES -->
+                <div id="cr" class="menu-coffee">
+                    <div class="inside-menu">
+                        <h1>CROFFLES</h1>
+                        
+                        <div class="menu-item-container" id="menu-item-container">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="overlay" class="overlay">
+                <div id="overlay-container">
+                    <div class="exit-menu"><img src="images/x.png" alt="close"></div>
+                    <div class="overlay-content">    
+                        <!-- <div class="overlay-pic">
+                            <img src="images/coffee/BiscoffLatte.svg" alt="">
+                        </div>
+                        <div class="overlay-info">
+                            <div>
+                                <h2 class="overlay-name">Mocha</h2>
+                            </div>
+                            <div>
+                                <h2 class="overlay-price">&#8369;169</h2>
+                            </div>
+                            <div class="desc-shot">                
+                                <div>
+                                    <p class="overlay-desc">A refreshing combination of bold espresso, creamy milk, and rich chocolate syrup, served over ice and chocolate drizzle.</p>
+                                </div>
+                                <div class="overlay-shot">
+                                    <h4><span>2</span> Espresso shots</h4>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            </main>
+    
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="footer-links">
+                <a href="index.html" class="footer-logo"><img src="images/logo.svg" alt="Bean and Beyond. logo"></a>
+                <div class="footer-nav">
+                    <div class="footer-qac">
+                        <ul>
+                            <li class="footer-title">QUICK LINKS</li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-qac">
+                        <ul>
+                            <li class="footer-title">AVAILABLE ON:</li>
+                            <li><a href="index.html"><img src="images/foodpanda-logow.svg" alt="foodpanda-logo" class="ffp"></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-qac">
+                            <p class="footer-title">CONNECT WITH US!</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/profile.php?id=61560274585424" target="_blank"><img src="images/Facebook-logo.svg" alt="Facebook logo"></a>
+                            <a href="https://www.tiktok.com/@beanandbeyond._" target="_blank"><img src="images/Tiktok-logo.svg" alt="Tiktok logo"></a>
+                            <a href="https://www.instagram.com/beanandbeyond._" target="_blank"><img src="images/Instagram-logo.svg" alt="Instagram logo"></a>
+                            <a href="mailto:beanandbeyond24@gmail.com" class="footer-email">beanandbeyond24@gmail.com</a>
+                        </div>
+                            
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="credits">
+                <p>&copy; 2024 Cedric Dungca. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+        <script src="scripts/script.js"></script>
+</body>
+</html>

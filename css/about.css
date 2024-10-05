@@ -1,0 +1,269 @@
+@import url("navFooter.css");
+
+html, body, .page-container {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+/* ABOUT SECTION */
+.about {
+    height: 55rem;
+    position: relative;
+    top: 1.75rem;
+    display: block;
+    background: #F6F5F3;
+}
+
+h2 {
+    color: #000000;
+    font-family: "League Spartan";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.abt p {
+    color: #000000;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    width: 80vw;
+    margin: auto;
+}
+
+/* SHOP HOURS */
+.hours h1 {
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.hours table {
+    width: 90vw;
+    border-collapse: collapse;
+}
+
+td, th {
+    color: #000000;
+    font-family: "League Spartan";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+    height: 1.75rem; 
+}
+
+tr td:first-child {
+    border-right: #000000 0.25rem solid;
+    text-align: right;
+    padding-right: 10px;
+}
+
+tr td:nth-child(2) {
+    text-align: center;
+    width: 6rem;
+}
+
+
+/* GALLERY */
+.gallery {
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.gallery-container img {
+    width: 14.375rem;
+    height: 14.3125rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 14.3125rem;
+    height: 43.25rem;
+    margin: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+}
+
+
+@media screen and (min-width: 320px) {
+    .desktop, .tablet{
+        display: none;
+    }
+
+    .about {
+        height: 48rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: table-row;
+    }
+
+    .about {
+        top: .5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .hours h1 {
+        text-align: left;
+        margin-left: 15%;
+    }
+
+    .abt p {
+        width: 75vw;
+    }
+
+    .hours table {
+        width: 78vw;
+        margin: auto;
+    }
+
+    th {
+        font-size: 1.5rem;
+        color: #E8E8E8;
+        border: #000000 1px solid;
+    }
+
+    td {
+        border: #000000 1px solid;
+        margin: auto;
+        font-size: 1.3rem;
+        /* width: auto; */
+    }
+    
+    tr th {
+        background: #9C6644;
+    }
+
+    tr td:first-child {
+        border-right: #000000 1px solid;
+        text-align: center;
+    }
+
+    tr:nth-of-type(even) {
+        background: #D9D9D9;
+    }
+    
+    tr td:nth-child(2) {
+        text-align: center;
+        width: auto;
+    }
+
+    tr td:nth-child(3) {
+        text-align: center;
+        width: auto;
+    }
+
+    .gallery-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30.2rem;
+        gap: 1.875rem 1.4375rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .hero video {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .blob {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 2rem;
+    }
+
+
+    .about {
+        top: -5rem;
+        padding-top: 5rem;
+        padding-bottom: 55rem;
+        width: 100%;
+    }
+
+    .abt {
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .abt img {
+        width: 28.25rem;
+        height: 22.5rem;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+    }
+
+    .info p { 
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .info h2 {
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .gallery {
+        position: relative;
+        top: -7.5rem;
+    }
+
+    .gallery-container {
+        width: 90vw;
+        justify-content: center;
+    }
+}

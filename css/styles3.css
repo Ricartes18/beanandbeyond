@@ -1,0 +1,1135 @@
+@import url("navFooter.css");
+
+html, body, .page-container {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+/* START OF HERO-SECTION */
+
+.hero-div {
+    position: relative;
+    width: 100vw;
+    height: 42rem;
+}
+
+.hero-ins {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    position: absolute;
+}
+
+.hero-text.btp {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #ffffff;
+    font-family: "League Spartan";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.28rem;
+    border-bottom: #dfdfdf 0.3rem solid;
+    padding-bottom: 0.91rem;
+}
+
+.hero-text.cap {
+    position: absolute;
+    width: 20rem;
+    text-align: center;
+    top: 16rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.9rem;
+
+    color: #DFDFDF;
+    font-family: "League Spartan";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-cta {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 25rem;
+    height: 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    justify-content: center;
+    border-radius: 0.625rem;
+    background: #DDB892;
+    text-decoration: none;
+
+    color: #65422D;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+}
+
+.hero-cta.menu {
+    top: 31rem;
+    font-size: 1.6rem;
+}
+
+.blob {
+    position: absolute;
+    width: 100%;
+    height: 9rem;
+    bottom: 0;
+}
+
+/* END OF HERO-SECTION */
+
+/* MENU SECTION */
+
+.menu-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110.5rem;
+    background: #F6F5F3;
+    margin: 0;
+}
+
+div.menu {
+    display: block;
+    margin: 0 auto;
+    width: 90rem;
+    height: 82rem;
+    margin: 0 auto;
+}
+
+.menu-section h2 {
+    padding-left: 0;
+    color: #65422D;
+    font-family: "League Spartan";
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu-section p {
+    color: var(--text);
+    font-family: "League Spartan";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-section h2, .menu-section p.desc {
+    margin-left: 2%;
+}
+
+.menu-items {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.9375rem;
+    width: 80vw;
+    height: 75rem;
+    top: 8.31rem;
+    border-radius: 0.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.menu-item {
+    position: relative;
+    width: 18.875rem;
+    height: 35rem;
+    border-radius: 0.875rem;
+    background: #65422D;
+    cursor: pointer;
+}
+
+div.menu-item:nth-child(2) {
+    background: #DDB892;
+}
+
+.menu-container {
+    position: relative;
+    height: 17rem;
+    width: 19rem;
+    transition: .3s ease;
+}
+
+.menu-item.coffee img, .menu-item.croffles img, .menu-item.fruit-ades img {
+    position: absolute;
+    height: 15rem;
+}
+
+.menu-container .c1, .cr1, .fa1{
+    position: absolute;
+    left: 13%;
+    top: 3rem;
+    right: 4rem;
+    z-index: 1;
+    transition: .3s ease;
+}
+
+.cr1 {
+    scale: 1.2;
+}
+
+.cr2 {
+    transform: rotate(-25deg);
+    scale: 1.2;
+    top: -1rem;
+}
+
+.fa2 {
+    scale: 1.05;
+}
+
+.menu-container .c2, .cr2, .fa2{
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    right: 4rem;
+    z-index: 0;
+    transition: .3s ease;
+}
+
+.menu-container .c3, .cr3, .fa3{
+    position: absolute;
+    left: 4.5rem;
+    top: 2rem;
+    right: 4rem;
+    z-index: 0;
+    transition: .3s ease;
+}
+
+.menu-container:hover {
+    top: .5rem;
+    scale: 1.2;
+    transition: .3s ease-in-out;
+}
+
+.menu-container .c1:hover, .cr1:hover, .fa1:hover {
+    top: 1rem;
+    transition: .3s ease-in-out;
+}
+
+.menu-item h1 {
+    position: absolute;
+    width: 19rem;
+    height: 2.88rem;
+    top: 17rem;
+    bottom: 1.56rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: "League Spartan";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.34rem;
+}
+
+div.barista-special {
+    display: flex;
+    width: 90vw;
+    margin-top: rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    gap: 1rem;
+}
+
+img.bs-text {
+    width: 18rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.bs-items {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+}
+
+.bs-item {
+    width: 6rem;
+    height: 7rem;
+    border-radius: 0.625rem;
+    background: #806044;
+    cursor: pointer;
+    margin: 0.5rem;
+    position: relative;
+}
+
+p.bs-name {
+    position: absolute;
+    color: #000000;
+    font-family: "League Spartan";
+    font-size: 0.775rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: -2rem 0 0 0.35rem;
+    width: 7rem;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+img.bs-img {
+    width: 5rem;
+    margin-top: -1.5rem;
+    height: 9.77544rem;
+    margin-left: .5rem;
+    animation: bsi 5s linear infinite;
+    user-select: none;
+}
+
+p.bs-price {
+    position: absolute;
+    width: 2.5625rem;
+    height: 0.9375rem;
+    color: #FFF;
+    font-family: "League Spartan";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    top: 4rem;
+    left: 2rem;
+}
+
+
+/* Animation for the barista special drinks */
+@keyframes bsi {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+        scale: 1.2;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* What's new section */
+
+div.whats-new {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* height: 40.625rem; */
+    
+    width: 100vw;
+    background: linear-gradient(180deg, #F6F5F3 0%, #908F8E 100%);
+}
+
+.wnls {
+    width: 90vw;
+}
+
+.wnl {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.whats-new h1 {
+    margin: 0 auto;
+    color: #000000;
+    font-family: "League Spartan";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 12rem;
+    border-bottom: #000000 0.143rem solid;
+}
+
+.whats-new .pubmat {
+    width: 28.375rem;
+    height: 28.6875rem;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+figcaption a {
+    color: #000000;
+    font-family: "Ubuntu", sans-serif;
+    margin-left: -9rem;
+    font-weight: 500;
+}
+
+.whats-new article {
+    width: 33rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.whats-new article h2 {
+    width: 32.9rem;
+    color: #000000;
+    font-family: "League Spartan";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+}
+
+.whats-new article .wncap {
+    width: 25.25rem;
+    height: 6.8125rem;
+    padding-top: 1rem;
+    flex-shrink: 0;
+    color: #000000;
+    font-family: "League Spartan";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.wn-order {
+    width: 100%;
+    padding-top: 6rem;
+    color: #000000;
+    font-family: "League Spartan";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fp-cta {
+    /* position: absolute; */
+    margin-top: -1rem;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.fp-cta:hover {
+    transform: translateY(1rem);
+    box-shadow: -12px -12px 2px 1px #D70F64;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+/* GET IN TOUCH SECTION */
+.get-in-touch {
+    background: #DDB892;
+}
+
+.get-in-touch div{
+    position: relative;
+    width: 100%;
+    height: 23rem;
+    background: none;
+    margin: 0 auto;
+}
+
+.get-in-touch p {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    font-family: "League Spartan";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.get-in-touch a {
+    position: absolute;
+    width: 12rem;
+    height: 3.5rem;
+    top: 15rem;
+    left: 0;
+    right: 0px;
+    padding-top: 1.2rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    color: #65422D;
+    background: #DDB892;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "League Spartan";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .4s ease;
+}
+
+.get-in-touch div img:nth-child(1) {
+    width: 100%;   
+    height: 23rem;      
+    z-index: -1;
+}
+
+.get-in-touch div img:nth-child(2) {
+    display: none;
+}
+
+@media screen and (min-width: 320px) {
+    
+    /* HIDES THE OTHER VIEWPORTS STYLE */
+    .desktop, .hero-in, .bs-item:last-child, .hero-coffee {
+        display: none;
+    }
+
+    .hero-phone {
+        width: 100%;
+        height: 110vh;
+    }
+
+    div.whats-new {
+        display: none;
+    }
+
+    nav.mobile {
+        width: 1.5rem;
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        float: right;
+        margin-right: 2rem;
+    }
+
+    .header-cta.mobile {
+        width: 25.5rem;
+        position: relative;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24.5rem;
+        font-size: 1.625rem;
+        font-weight: 700;
+    }
+
+    /* Get in touch */
+    .get-in-touch div.ctext {
+        width: 90vw;
+        top: -25rem;
+    }
+}
+
+/* TABLET VIEW */
+@media screen and (min-width: 600px) {
+    
+    .hero-phone {
+        display: none;
+    }
+
+    .bnbc {
+        display: none;
+    }
+
+    .hero-div {
+        height: 79rem;
+        width: 100vw;
+    }
+
+    .hero-coffee {
+        display: block;
+        position: absolute;
+        left: calc(100vw - 46%);
+        top: 5rem;
+        transform: rotate(-30deg);
+        animation: coffee 5s ease infinite;
+        z-index: -1;
+    }
+
+    @keyframes coffee {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(-40deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .hero-text.btp{
+        color: #65422D;
+        border-bottom-color: #65422D;
+        top: 9rem;
+        left: 10%;
+        transform: none;
+        width: 20rem;
+    }
+
+    .hero-text.cap {
+        color: #806044;
+        top: 18rem;
+        left: 10%;
+        transform: none;
+        text-align: left;
+    }
+
+    .hero-cta {
+        top: 26rem;
+        left: 10%;
+        transform: none;
+        height: 4rem;
+    }
+
+    .hero-cta.menu {
+        background-color: #DDB892;
+        top: 34rem;
+        left: 10%;
+        transform: none;
+    }
+
+    .hero-in {
+        display: block;
+        position: absolute;
+        width: 42.5rem;
+        height: 42.75rem;
+        /* width: 70vw;
+        height: 70vh; */
+        border-radius: .6rem;
+        top: 44rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .blob {
+        top: 70rem;
+    }
+
+    /* MENU SECTION */
+
+    div.menu {
+        padding-bottom: 5rem;
+
+    }
+    .menu-items {
+        gap: 5rem;
+    }
+
+    .menu-section h2, .menu-section p.desc {
+        margin-left: 5%;
+    }
+
+    div.menu-item {
+        width: 27.75rem;
+        height: 50rem;
+        border-radius: 0.875rem;
+        background: #65422D;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    div.menu-item {
+        position: relative;
+        width: 27.875rem;
+        height: 40rem;
+        border-radius: 0.875rem;
+        background: #65422D;
+        cursor: pointer;
+    }
+
+    .menu-container {
+        width: 100%;
+        height: 25rem;
+        text-align: center;
+        margin-left: 6.6%;
+    }
+
+    .menu-section {
+        /* max-height: 240vh;
+        max-height: 410rem; */
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    .menu-section h1 {
+        font-size: 3rem;
+        margin-left: 17%;
+        bottom: 0;
+        margin-bottom: 0;
+        top: 19rem;
+    }
+
+    .menu-item.coffee img, .menu-item.croffles img, .menu-item.fruit-ades img {
+        position: absolute;
+        height: 18rem;
+    }
+
+    .menu-container .c3, .cr3, .fa3{
+        position: absolute;
+        left: 7rem;
+        top: 2rem;
+        right: 4rem;
+        z-index: 0;
+        transition: .3s ease;
+    }
+    
+    div.barista-special {
+        position: relative;
+        margin-top: 12rem;
+        padding-top: 5rem;
+    }
+
+    .bs-item {
+        width: 14rem;
+        height: 12rem;
+    }
+
+    p.bs-name {
+        margin: -1rem 0 0 1rem; 
+        font-size: 1.2rem;
+        width: 12rem;
+    }
+
+    img.bs-img {
+        width: 10rem;
+        margin-top: .5rem;
+    }
+
+    p.bs-price {
+        top: 7.44rem;
+        left: 6.31rem;
+        font-size: 2rem;
+    }
+
+    /* WHATS NEW SECTION */
+    div.whats-new {
+        display: flex;
+        max-height: 190vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7rem;
+    }
+
+    .whats-new article h2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 34rem;
+        text-align: center;
+    }
+
+    .wncap {
+        display: none;
+        padding: 0;
+    }
+
+    .wn-order {
+        padding: 0;
+        margin-left: 17%;
+    }
+
+    .fp-cta {
+        margin-top: -1rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        transition: .3s ease;
+    }
+    
+    .fp-cta:hover {
+        display: inline;
+        transform: translateY(1rem);
+        box-shadow: -12px 12px 2px 1px #D70F64;
+        border-radius: 10px;
+        transition: .3s ease;
+    }
+
+    /* GET IN TOUCH SECTION */
+    .get-in-touch p {
+        width: 80%;
+        font-size: 2rem;
+    }
+    
+    .get-in-touch a {
+        position: absolute;
+        width: 16rem;
+        height: 4rem;
+        font-size: 2rem;
+        padding-top: 1.3rem;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .desktop, .hero-in, .bs-item:last-child {
+        display: block;
+    }
+
+    .mobile, .hero-coffee{
+        display: none;
+    }
+
+    .hero-div {
+        height: 46.875rem;
+        width: 100%;
+    }
+
+    .hero {
+        position: absolute;
+        z-index: -1;
+        user-select: none;
+        width: 100%;
+        height: 50rem;
+    }
+
+    .hero-ins {
+        position: relative;
+        width: 90rem;
+        margin: 0 auto;
+    }
+    
+    .hero-in {
+        position: absolute;
+        width: 50.9375rem;
+        height: 43.3125rem;
+        right: -5rem;
+        top: 5rem;
+    }
+
+    .hero-text.btp {
+        top: 9.5rem;
+        left: 7.44rem;
+        width: 25rem; 
+        color: #ffffff;
+        font-size: 4rem;
+        border-bottom: #dfdfdf 0.3rem solid;
+
+    }
+
+    .hero-text.cap {
+        color: #DFDFDF;
+        top: 20rem;
+        left: 7.75rem;
+        width: 24.75rem; 
+        font-size: 1.625rem;
+    }
+
+    .hero-cta {
+        font-size: 1.8rem;
+        top: 27.94rem;
+        left: 7.75rem;
+        width: 24.75rem;
+        height: 3.125rem;
+    }
+
+    .hero-cta.menu {
+        left: 7.75rem;
+        top: 33.75rem;
+        background: #ffffff;
+    }
+
+    .hero-cta:hover, .hero-cta.menu:hover{
+        background: #65422D;
+        color: #DDB892;
+        font-size: 1.8rem;
+        transition: .1s ease;
+    }
+
+    .blob {
+        position: absolute;
+        width: 100%;
+        height: 9rem;
+        top:39.8rem;
+    }
+
+    /* MENU */
+    .menu-section {
+        height: 52.5rem;
+    }
+
+    div.menu {
+        height: 30rem;
+        padding-bottom: 0;
+    }
+
+    .menu-container {
+        height: 17rem;
+        width: 19rem;
+        margin-left: 0;
+    }
+
+    .menu-container img {
+        scale: 0.9;
+    }
+
+    .c1, .cr1, .fa1 {
+        margin-left: -2rem;
+        margin-top: -3rem;
+    }
+
+    .c2, .cr2, .fa2 {
+        margin-left: -2rem;
+        margin-top: -3rem;
+    }
+
+    .c3, .cr3, .fa3 {
+        margin-left: -4rem;
+        margin-top: -3rem;
+    }
+
+    .menu-section h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        margin-top: -2.3rem;
+        
+    }
+
+    .menu-section h2, .menu-section p.desc {
+        margin-left: 13%;
+    }
+
+    .menu-items {
+        width: auto;
+        gap: 2rem;
+        height: 18.9rem;
+        top: 8.31rem;
+        flex-direction: row;
+    }
+
+    div.menu-item {
+        width: 18.875rem;
+        height: 18.875rem;
+    }
+
+    div.barista-special {
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .bs-item {
+        margin: 2rem;
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+
+    .bs-items {
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .bs-item:last-child {
+        background: #9C6644;
+        cursor: default;
+    }
+
+    p.bs-name {
+        margin: -1rem 0 0 1rem; 
+    }
+
+    img.bs-img {
+        width: 7.32369rem;
+        margin-top: auto;
+    }
+
+    img.bs-img:hover {
+        animation-play-state: paused;
+        scale: 1.5;
+    }
+
+    p.bs-price {
+        top: 6.44rem;
+        left: 6.31rem;
+        font-size: 1.25rem;
+    }
+
+    .bs-item.info {
+        display: flex;
+        width: 11rem;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .bs-item p.info{
+        margin-top: 0.15rem;
+        width: 0;
+    }
+    
+    .bs-item p.info {
+        text-align: left;
+        margin-left: .8rem;
+        color: #ffffff;
+        font-family: "League Spartan";
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 43%;
+    }
+    
+    .bs-item p.info.price {
+        font-size: 1.5rem;
+        text-align: right;
+        margin-left: -.1rem;
+    }
+
+    /* WHATS NEW SECTION */
+
+    div.whats-new {
+        display: flex;
+        height: 50%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .whats-new h1 {
+        margin-left: 0;
+    }
+
+    .whats-new article h2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+        width: 34rem;
+        text-align: left;
+    }
+
+    .wnls {
+        display: flex;
+        justify-content: center;
+        width: 90rem;
+        gap: 5vw;
+    }
+
+    .wnl {
+        /* margin-right: 10%;
+        margin-left: 3vw; */
+        margin: 0;
+        width: 30rem;
+    }
+
+    .wncap {
+        display: block;
+    }
+
+    .wn-order {
+        padding: 0;
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+
+    figcaption a {
+        display: block;
+        width: 19rem;
+        
+    }
+
+    .fp-cta {
+        margin-top: -1rem;
+        margin-left: 0;
+        margin-right: auto;
+        border-radius: 10px;
+        transition: .3s ease;
+    }
+    
+    .fp-cta:hover {
+        display: inline;
+        transform: translateY(1rem);
+        box-shadow: -12px 12px 2px 1px #D70F64;
+        border-radius: 10px;
+        transition: .3s ease;
+    }
+
+    /* GET IN TOUCH */
+    .get-in-touch div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .get-in-touch div.ctext {
+        width: 50rem;
+        top: 0;
+    }
+
+    .bnbc {
+        display: block;
+        width: 45rem;
+        /* position: absolute; */
+        /* width: 50.9375rem;
+        height: 43.3125rem;
+        right: -5rem; */
+    }
+
+    .get-in-touch p {
+        color: #65422D;
+        text-align: center;
+        font-family: "League Spartan";
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 35.8125rem;  
+        top: 2rem; 
+        margin: auto;
+    }
+
+    .get-in-touch a {
+        color: #F6F6F6;
+        background: #806044;
+        width: 26.1rem;
+        height: 7rem;
+        top: 10.94rem;
+        font-size: 4rem;
+    }
+
+    .get-in-touch a:hover {
+        transform: translateX(2rem);
+        box-shadow: -12px 18px 2px 1px #65422D;
+        transition: .4s ease;
+    }
+
+}

@@ -1,0 +1,226 @@
+@import url("navFooter.css");
+
+html, body, .page-container {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.get-in-touch {
+    height: auto;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
+
+.get-in-touch h1 {
+    color: #65422D;
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10%;
+}
+
+fieldset {
+    margin: auto;
+    width: 80vw;
+    border: none;
+}
+
+label, input, textarea {
+    display: block;
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+input {
+    border: #000000 1px solid;
+    margin-top: .4rem;
+    margin-bottom: 1rem;
+    width: 80vw;
+    height: 2.06rem;
+    padding: 1rem;
+}
+
+textarea {
+    border: #000000 1px solid;
+    padding: 1rem;
+    width: 80vw;
+    height: 11.06rem;
+}
+
+#send {
+    width: 8.5625rem;
+    height: 3.125rem;  
+    border-radius: 0.625rem;
+    background: #DDB892;
+    border-width: 0;
+    margin-top: 1rem;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.call-us {
+    width: 80vw;
+    margin: auto;
+}
+
+.call-us img{
+    height: 48px;
+    width: 48px;
+}
+
+.phone, .location, .info {
+    display: flex;
+    justify-content: flex-start;
+    width: 18rem;
+    
+}
+
+.call-us h2 {
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 1rem;
+}
+
+.call-us h4 {
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 1rem;
+}
+
+.call-us p {
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.map {
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.map h4 {
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.map iframe {
+    width: 19rem;
+    height: 13.1875rem;
+}
+
+
+@media screen and (min-width: 320px) {
+    .desktop, .tablet{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .desktop {
+        display: none;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    input {
+        width: 18.17rem;
+    }
+
+    .call-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .map h4 {
+        font-size: 1.625rem;
+    }
+
+    .map iframe {
+        width: 38.5rem;
+        height: 22.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .get-in-touch {
+        padding-top: 6rem;
+        display: flex;
+        width: 90vw;
+        margin: auto;
+    }
+
+    fieldset {
+        width: 15rem;
+    }
+
+    .call-us {
+        border-left: #000000 2px solid;
+        padding-left: 2rem;
+    }
+
+    .form {
+        width: 40rem;
+        justify-content: space-evenly;
+    }
+
+    textarea {
+        width: 34.37rem;
+    }
+
+    input {
+        width: 16.25rem;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 36.19rem;
+    }
+}

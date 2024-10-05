@@ -1,0 +1,447 @@
+@import url("navFooter.css");
+
+html, body, .page-container {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+/* NAV INSIDE MENU */
+
+.nav-in {
+    position: fixed;
+    top: 3rem;
+    z-index: 1;
+}
+
+.nav-in div{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 2.875rem;
+    justify-content: center;
+    align-items: center;
+    background: #685544;
+    overflow: visible;
+}
+
+.nav-in div ul {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+    height: 4rem;
+    /* padding: 2rem; */
+    gap: 2rem;
+    
+}
+
+.nav-in div ul li{
+    width: 10rem;
+    height: 1rem;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-in div ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "League Spartan";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.nav-in a.active {
+    padding-bottom: .2rem;
+    border-bottom: #ffffff 2px solid;
+}
+/* END OF NAV */
+
+/* ITEM CONTAINER */
+.inside-menu {
+    background: #DFDFDF;
+    padding-top: 6rem;
+    max-height: 200vh;
+    padding-bottom: 6rem;
+}
+
+.inside-menu h1 {
+    color: #000;
+    font-family: "League Spartan";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.34rem;
+    text-align: center;
+}
+
+.menu-item-container {
+    display: flex;
+    width: 100vw;
+    /* width: 14.375rem; */
+    max-height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.menu-item {
+    width: 14.375rem;
+    height: 14.375rem;
+    background: #F6F5F3;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.menu-item a {
+    height: 14.375rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: #65422D;
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu-item p {
+    font-size: 1.125rem;
+    width: 7rem;
+    margin-bottom: .5rem;
+}
+
+.menu-item h2 {
+    /* font-size: 2rem; */
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+}
+
+.menu-item img {
+    width: 10rem;
+    height: 9.5rem;
+}
+
+.menu-coffee {
+    display: none;
+}
+
+.menu-coffee.active {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: -100vh;
+    opacity: 0;
+    transition: .5s ease;
+    z-index: -1;
+}
+
+.overlay.active {
+    opacity: 1;
+    z-index: 9999;
+    transition: .5s ease;
+    bottom: 0;
+    overflow-y: hidden;
+    display: block;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+html.no-scroll {
+    overflow-y: hidden;
+}
+
+.overlay-pic {
+    width: 10.875rem;
+    height: 15.5rem;
+    margin: auto;
+    /* margin-top: 1rem; */
+}
+
+.overlay-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto 1rem;
+    align-items: center;
+}
+
+.desc-shot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-pic img {
+    width: 100%;
+    height: 80%;
+}
+
+.overlay-name {
+    color: #65422D;
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 15rem;
+}
+
+.overlay-price {
+    color: #65422D;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.overlay-desc {
+    color: #65422D;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.overlay-shot {
+    color: #65422D;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.overlay-shot span {
+    color: #4D3323;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.exit-menu {
+    /* margin-right: 2rem; */
+    margin-top: 4.5rem;
+    margin-left: 85%;
+    user-select: none;
+}
+
+@media screen and (min-width: 320px) {
+    .desktop {
+        display: none;
+    }
+
+    .overlay {
+        background: linear-gradient(180deg, rgba(223, 223, 223, 0.60) 0%, #908F8E 100%);
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .desktop {
+        display: none;
+    }
+
+    .menu-item-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 40rem;
+        align-content: flex-start;
+    }
+
+    .overlay {
+        background: none;
+        display: block;
+    }
+    #overlay-container {
+        height: 70vh;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(223, 223, 223, 0.60) 0%, #908F8E 100%);
+    }
+
+    .overlay-content {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80vw;
+        margin: auto;
+        /* margin-bottom: auto; */
+    }
+
+    .overlay-pic {
+        width: 20rem;
+        height: 27rem;
+        flex-grow: 2;
+    }
+
+    .overlay-info {
+        width: 20rem;
+    }
+
+    .overlay-info div:nth-child(2) {
+        order: 4;
+    }
+
+    .desc-shot {
+        width: 17.1875rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-coffee.active {
+        display: inline-block;
+        /* width: auto; */
+        width: 70%;
+    }
+
+    .inside-menu {
+        height: 100vh;
+    }
+
+    .menu-item-container {
+        height: 100%;
+    }
+
+    aside {
+        display: inline-block;
+        /* width: 25rem; */
+        width: 30%;
+        height: 100vh;
+        background: #685544;
+    }
+
+    aside div {
+        position: relative;
+        top: 5rem;
+        bottom: 10.25rem;
+    }
+
+    aside div ul {
+        list-style-type: none;
+        padding: 0;
+        height: 100vh;
+        margin: 0;
+    }
+
+    aside div ul li {
+        height: 5rem;
+        border-bottom: #4D3323 2px solid;
+        text-align: center;
+        /* padding-top: 32px; */
+        transition: ease .2s;
+    }
+
+    aside div ul li:first-child {
+        height: 11rem;
+        margin: auto;
+    }
+
+    .nc.active {
+        background: #4D3323;
+        transition: ease .2s;
+    }
+    
+    .img-bs {
+        height: 11.81rem;
+    }
+
+    aside div ul li a{
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        font-family: "League Spartan";
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 1.75rem;
+    }
+
+    #baristaSpeciald{
+        padding: 0;
+    }
+
+    #overlay-container {
+        width: 46.5rem;
+        height: 36.5rem;
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        position: relative;
+        border-radius: 1rem;
+        background: linear-gradient(#DFDFDF);
+    }
+
+    .overlay-name {
+        color: #000000;
+    }
+
+    .exit-menu {
+        position: absolute;
+    }
+
+    .overlay-content {
+        position: absolute;
+        width: 40rem;
+        right: 0;
+        left: 0;
+        bottom: 2rem;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
