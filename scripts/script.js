@@ -664,12 +664,13 @@ function itemOverlay(name, num) {
 // ITEM OVERLAY
 
 const exit = document.querySelector(".exit-menu");
-
+if (window.location.href.indexOf('menu.html') > -1){
 exit.addEventListener('click', () => {
     console.log("CLICKED");
     document.getElementById('overlay').classList.toggle('active');
     document.getElementsByTagName('html')[0].classList.toggle('no-scroll');
 })
+}
 
 const overlay = document.getElementById("overlay");
 if (screen.width < 1024) {
