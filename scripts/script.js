@@ -540,6 +540,7 @@ function menuShowcase(cd,wh) {
             cd = croffles;
 
         default:
+            cd = baristaSpecial;
             break;
     }
 
