@@ -537,11 +537,7 @@ function menuShowcase(cd,wh) {
             cd = fruitAdes;
             break;
         case "croffles":
-            cd = croffles;
-
-        default:
-            cd = baristaSpecial;
-            break;
+            cd = croffles
     }
 
     for (let i = 0; i < cd.length; i++) {
