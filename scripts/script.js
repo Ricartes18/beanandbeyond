@@ -451,7 +451,9 @@ function baristaSpecialin() {
 }
 
 window.onload = function() {
-    baristaSpecialin();
+    if (window.location.href.indexOf('menu.html){                              
+        baristaSpecialin();
+    };
 
     if (window.location.href.indexOf('menu.html') > -1){
         switch (location.hash) {
