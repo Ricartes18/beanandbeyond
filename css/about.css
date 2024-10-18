@@ -267,3 +267,14 @@ tr td:nth-child(2) {
         justify-content: center;
     }
 }
+
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    header, footer, video, .gallery, img {
+        display: none;
+    }
+}
