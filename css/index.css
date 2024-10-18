@@ -1133,3 +1133,14 @@ figcaption a {
     }
 
 }
+
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    header, footer, .hero, .hero-phone, .hero-coffee {
+        display: none;
+    }
+}
