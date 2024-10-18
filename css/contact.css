@@ -224,3 +224,14 @@ textarea {
         height: 36.19rem;
     }
 }
+
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    header, footer{
+        display: none;
+    }
+}
