@@ -438,7 +438,16 @@ html.no-scroll {
     }
 }
 
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 
+    header, footer, aside, .nav-in{
+        display: none;
+    }
+}
 
 
 
