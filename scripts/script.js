@@ -451,9 +451,6 @@ function baristaSpecialin() {
 }
 
 window.onload = function() {
-    // if (window.location.href.indexOf('menu.html){                              
-    //     baristaSpecialin();
-    // };
 
     if (window.location.href.indexOf('menu.html') > -1){
         switch (location.hash) {
@@ -563,8 +560,6 @@ function itemOverlay(name, num) {
     let itemOverlays = document.querySelector(`.${name}.menu-item`);
     let closeMenu = document.getElementById('overlay');
 
-    // itemOverlays.addEventListener('click', (e) => {
-        // e.preventDefault();
         document.getElementsByTagName('html')[0].classList.toggle('no-scroll');
         console.log("CLICKED");
         itemOverlays.classList.toggle('active');
@@ -655,7 +650,7 @@ function itemOverlay(name, num) {
         }
         
         close.insertAdjacentHTML('afterbegin', itemInfo);
-        // })
+
 }
 // ITEM OVERLAY
 
@@ -683,12 +678,6 @@ if (screen.width < 1024) {
 
         document.getElementsByTagName('html')[0].classList.toggle('no-scroll');
 
-        // if ((document.getElementById('overlay').contains(document.getElementById('overlay-container')))){
-        //     // document.getElementById('overlay').classList.toggle('active');
-        //     alert("inside");
-        // } else {
-        //     alert("outside");
-        // }
     })
 
 }
