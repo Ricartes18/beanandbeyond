@@ -204,43 +204,43 @@ const nonCoffee = [
     {
         name: "Strawberry Chocolate",
         price: "120",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: "This treat combines the richness of chocolate with the vibrant sweetness of strawberries, resulting in a creamy, flavorful drink that's sure to delight"
     },
     {
         name: "Chocolate",
         price: "120",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: "Enjoy the perfect harmony of rich chocolate and smooth milk, delivering a decadent and comforting drink that's ideal for chocolate lovers"
     },
     {
         name: "Milky Avocado",
         price: "120",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Milky Ube",
         price: "120",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Matcha Latte",
         price: "120",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: "Indulge in the rich, texture of milk combined with high-quality matcha, offering a unique and invigorating twist on a classic latte."
     },
     {
         name: "Milky Mango",
         price: "110",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Strawberry Milk",
         price: "110",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     }
 ]
@@ -249,49 +249,49 @@ const frappe = [
     {
         name: "Strawberry Milk",
         price: "129",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Matcha",
         price: "129",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Chocolate",
         price: "139",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Caramel Macchiato",
         price: "159",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Coffee Jelly",
         price: "159",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Mocha",
         price: "159",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Salted Caramel",
         price: "159",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
     {
         name: "Java Chip",
         price: "159",
-        img: "images/coffee/",
+        img: "images/logo.svg",
         alt: ""
     },
 ]
